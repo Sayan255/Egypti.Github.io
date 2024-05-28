@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/logo.png" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <title>EgyptiVisa - Register & Login</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-image:url("img/Back.jpg") ;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            max-width: 1000px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(129, 238, 4, 0.877);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .form-container {
+            width: 50%;
+            padding: 30px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container form button {
+            padding: 10px;
+            background-color: #86b817;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container form button:hover {
+            background-color: rgba(129, 238, 4, 0.877);;
+        }
+        .Title{
+            text-align: center;
+            color: #86b817;
+        }
+       .etc{
+           font-size: 12px;
+           margin-bottom: 10px;
+       }
+       @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+            }
+            .form-container {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+            }
+            .form-container form input {
+                padding: 8px;
+            }
+            .form-container form button {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="Title" class="btn btn-primary rounded-pill py-2 px-4">EgyptiVisa</h1>
+        <div class="form-container">
+            <h2 class="Title">Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input  action="/reset-password" type="password" placeholder="Password" required>
+                <div class="etc">
+                <a href="#">Forgotten Password?</a>
+            </div>
+                <button type="submit" value="Submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
